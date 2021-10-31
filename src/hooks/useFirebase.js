@@ -1,44 +1,59 @@
 import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged } from "firebase/auth";
-
-import { useEffect, useState } from "react";
+import { useHistory, useLocation } from 'react-router-dom';
+import { useContext, useEffect, useState } from "react";
 import { initializeAuthentication } from "../Firebase/firebase.init";
+import { UserContext } from "../App";
 
 
 initializeAuthentication();
+
 const useFirebase = () => {
-    const [user, setUser] = useState();
-    const auth = getAuth();
+
+    const [user, setUser] = useContext(UserContext);
+    const [error, setError] = useState('');
+    const [isLoading, setIsLoading] = useState(true);
+    const auth = getAuth()
+    const googleProvider = new GoogleAuthProvider();
+    const history = useHistory();
+    const location = useLocation();
+    let { from } = location.state || { from: { pathname: "/" } };
 
     const signInUsingGoogle = () => {
-        const googleProvider = new GoogleAuthProvider();
         signInWithPopup(auth, googleProvider)
             .then(result => {
+                // console.log(result.user);
                 setUser(result.user)
+                if (result) {
+                    history.replace(from);
+                }
             })
+            .catch(error => {
+                setError(error.massage);
+            })
+
+    }
+
+    const logOut = () => {
+        setIsLoading(true);
+        signOut(auth)
+            .then(() => { })
+            .finally(() => setIsLoading(false));
     }
 
     useEffect(() => {
-        const unsubscribed = onAuthStateChanged(auth, user => {
+        onAuthStateChanged(auth, user => {
             if (user) {
-                setUser(user);
+                console.log('inside', user);
+                setUser(user)
             }
-            else {
-                setUser({})
-            }
-        });
-        return () => unsubscribed;
+        })
     }, [])
-    const logOut = () => {
-        signOut(auth)
-            .then(() => {
-
-            })
-    }
 
     return {
         user,
         signInUsingGoogle,
-        logOut
+        logOut,
+        isLoading,
     }
 }
 export default useFirebase;

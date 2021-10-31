@@ -6,9 +6,9 @@ const Banner = () => {
     return (
         <div>
             <section className="w-full h-3/4 background bg-no-repeat	bg-cover bg-fixed">
-                <div className="container w-full h-screen p-8 sm:px-0  flex flex-col justify-center text-left">
-                    <h1 className="text-6xl text-white font-bold animate-pulse">Order Your FOOD</h1>
-                    <h1 className="text-yellow-500 mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dicta, molestias rem neque dolores ullam ex iusto nisi at dolore</h1>
+                <div className=" w-full h-screen  flex flex-col justify-center text-left pl-10">
+                    <h1 className="md:text-8xl text-red-500 font-bold animate-pulse ">Order Your FOOD</h1>
+                    <h1 className="text-green-400 mt-4 md:text-2xl">Are you hungry? Did you have a long and stressful day? Interested in getting a cheesy pizza delivered to your office or looking to avoid the weekly shop? Then Order For FOODIE is the right destination for you! foodpanda offers you a long and detailed list of the best restaurants and shops near you to help make your everyday easier.</h1>
                 </div>
             </section>
         </div>
