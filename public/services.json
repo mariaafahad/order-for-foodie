@@ -1,0 +1,38 @@
+[
+    {
+        "name": "PENNY-PASTA-TOMATO",
+        "price": "300",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/VvNRGXV/penne-pasta-tomato-sauce-with-chicken-tomatoes-wooden-table-2829-19744.jpg"
+    },
+    {
+        "name": "PIZZA",
+        "price": "450",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/Vwny8Cm/top-view-pepperoni-pizza-with-mushroom-sausages-bell-pepper-olive-corn-black-wooden-141793-2158.jpg"
+    },
+    {
+        "name": "MEXICAN_TACOS",
+        "price": "250",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/PrDHx51/mexican-tacos-with-beef-tomato-sauce-salsa-2829-14149.jpg"
+    },
+    {
+        "name": "GRILLED-CHICKEN",
+        "price": "320",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/3h8hrMY/grilled-chicken-legs-barbecue-sauce-with-pepper-seeds-parsley-salt-black-stone-plate-black-stone-tab.jpg"
+    },
+    {
+        "name": "BURGER",
+        "price": "100",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/x7LCnsK/closeup-shot-delicious-cheeseburger-with-fresh-ingredients-attached-with-skewers-stick-181624-41852.jpg"
+    },
+    {
+        "name": "CHICKEN-FRY",
+        "price": "300",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "img": "https://i.ibb.co/gWj0Zp2/chicken-2.jpg"
+    }
+]
